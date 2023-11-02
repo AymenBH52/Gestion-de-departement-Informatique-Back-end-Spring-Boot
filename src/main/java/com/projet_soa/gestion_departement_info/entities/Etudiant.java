@@ -27,7 +27,7 @@ public class Etudiant implements Serializable {
     @Column
     private String nom;
     @Column
-    private String prénom;
+    private String prenom;
     @Column
     private String dateNaissance;
     @Column

@@ -33,7 +33,7 @@ public class EtudiantServiceImpl implements EtudiantService {
             Etudiant updatedEtudiant = existingEtudiant.get();
             updatedEtudiant.setCin(etudiant.getCin());
             updatedEtudiant.setNom(etudiant.getNom());
-            updatedEtudiant.setPrénom(etudiant.getPrénom());
+            updatedEtudiant.setPrenom(etudiant.getPrenom());
             updatedEtudiant.setDateNaissance(etudiant.getDateNaissance());
             return etudiantRepository.save(updatedEtudiant);
         } else {
