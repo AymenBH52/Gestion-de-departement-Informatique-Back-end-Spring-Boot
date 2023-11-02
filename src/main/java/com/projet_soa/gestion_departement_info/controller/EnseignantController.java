@@ -14,7 +14,7 @@ import com.projet_soa.gestion_departement_info.entities.Enseignant;
 
 import java.util.List;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/enseignants")
 public class EnseignantController {
