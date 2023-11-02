@@ -23,12 +23,12 @@ public class EnseignantController {
 
     @Autowired
     private EnseignantService enseignantService;
-   
+
     @GetMapping
     public List<Enseignant> getAllEnseignants() {
         return enseignantService.getAllEnseignants();
-    }    
-  
+    }
+
     @GetMapping("/{id}")
     public Enseignant getEnseignantById(@PathVariable Long id) {
         return enseignantService.getEnseignantById(id);
