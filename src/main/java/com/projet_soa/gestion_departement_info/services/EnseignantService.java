@@ -8,8 +8,8 @@ public interface EnseignantService {
 
     List<Enseignant> getAllEnseignants();
     Enseignant getEnseignantById(Long id);
-    Enseignant saveEnseignant(Enseignant cadreAdministratif);
-    Enseignant updateEnseignant(Long id, Enseignant cadreAdministratif);
+    Enseignant saveEnseignant(Enseignant enseignant);
+    Enseignant updateEnseignant(Long id, Enseignant enseignant);
     void deleteEnseignantById(Long id);
     
 }
