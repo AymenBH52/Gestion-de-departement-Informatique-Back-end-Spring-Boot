@@ -32,5 +32,6 @@ public class Etudiant implements Serializable {
     private String dateNaissance;
     @Column
     private Integer numberOfAbsences;
-
+    @Column
+    private Double note;
 }

@@ -82,4 +82,16 @@ public class EtudiantServiceImpl implements EtudiantService {
         return tauxAbsentisme;
     }
 
+    public Double getTauxReussite() {
+        Long nombreTotalEtudiants = etudiantRepository.count();
+        Long nombreTotalReussites = etudiantRepository.findAll().stream().filter(etudiant -> etudiant.getNote() >= 10)
+                .count();
+        double tauxReussite = (double) nombreTotalReussites / nombreTotalEtudiants;
+        return tauxReussite;
+    }
+
+    public Boolean Reussi(Etudiant etudiant) {
+        return etudiant.getNote() >= 10;
+    }
+
 }

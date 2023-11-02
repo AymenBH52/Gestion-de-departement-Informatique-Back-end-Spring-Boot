@@ -22,4 +22,8 @@ public interface EtudiantService {
     public void removeAbsence(Long etudiantId);
 
     public Double getTauxAbsenteisme();
+
+    public Double getTauxReussite();
+
+    public Boolean Reussi(Etudiant etudiant);
 }
