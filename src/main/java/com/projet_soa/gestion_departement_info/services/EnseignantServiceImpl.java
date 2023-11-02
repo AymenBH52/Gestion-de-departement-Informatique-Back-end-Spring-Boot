@@ -12,7 +12,7 @@ import com.projet_soa.gestion_departement_info.entities.Enseignant;
 public class EnseignantServiceImpl implements EnseignantService {
 
     @Autowired
-    private EnseignantRepository enseignantRepository;
+    EnseignantRepository enseignantRepository;
 
     public List<Enseignant> getAllEnseignants() {
         return enseignantRepository.findAll();
