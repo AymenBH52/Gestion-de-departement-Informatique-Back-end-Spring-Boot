@@ -43,7 +43,7 @@ public class EtudiantController {
         return etudiantService.update(id, etudiant);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/deleteEtudiant/{id}")
     public void deleteEtudiant(@PathVariable Long id) {
         etudiantService.delete(id);
 

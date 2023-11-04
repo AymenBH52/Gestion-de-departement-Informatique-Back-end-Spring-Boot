@@ -18,7 +18,49 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 public class Etudiant implements Serializable {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Long getCin() {
+		return Cin;
+	}
+	public void setCin(Long cin) {
+		Cin = cin;
+	}
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public String getPrenom() {
+		return prenom;
+	}
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	public String getDateNaissance() {
+		return dateNaissance;
+	}
+	public void setDateNaissance(String dateNaissance) {
+		this.dateNaissance = dateNaissance;
+	}
+	public Integer getNumberOfAbsences() {
+		return numberOfAbsences;
+	}
+	public void setNumberOfAbsences(Integer numberOfAbsences) {
+		this.numberOfAbsences = numberOfAbsences;
+	}
+	public Double getNote() {
+		return note;
+	}
+	public void setNote(Double note) {
+		this.note = note;
+	}
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column
     private Long id;
@@ -34,4 +76,5 @@ public class Etudiant implements Serializable {
     private Integer numberOfAbsences;
     @Column
     private Double note;
+    
 }
